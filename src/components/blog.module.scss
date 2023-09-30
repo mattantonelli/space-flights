@@ -1,0 +1,11 @@
+.post {
+  img {
+    height: 250px;
+    object-fit: contain;
+  }
+
+  .postBody {
+    height: 250px;
+    overflow: auto;
+  }
+}
