@@ -18,19 +18,17 @@ export default async function Articles() {
   const data = await getData();
 
   return (
-    <>
-      <h1>Articles</h1>
-      <div className="row">
-        <div className="col-8 offset-2">
-          {data.results.map((article) => {
-            return (
-              <div className="mb-2" key={article.id}>
-                <Post data={article} />
-              </div>
-            )
-          })}
-        </div>
+    <div className="row">
+      <div className="col-8 offset-2">
+        <h1 className="text-center mb-3">Articles</h1>
+        {data.results.map((article) => {
+          return (
+            <div className="mb-2" key={article.id}>
+              <Post data={article} />
+            </div>
+          )
+        })}
       </div>
-    </>
+    </div>
   )
 }
