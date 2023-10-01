@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <div className="container">
           <nav className="navbar navbar-expand bg-light">
             <div className="container">
-              <Link href="/" className="navbar-brand">Space Flights</Link>
+              <Link href="/articles" className="navbar-brand">Space Flights</Link>
               <div className="collapse navbar-collapse">
                 <div className="navbar-nav">
                   <Link href="/articles" className="nav-link">Articles</Link>
