@@ -11,14 +11,14 @@ async function getData(url) {
 }
 
 export default async function Feed({ endpoint }) {
-  const url = `https://api.spaceflightnewsapi.net/v4/${endpoint}`;
+  const url = `https://api.spaceflightnewsapi.net/v4/${endpoint}/`;
   const data = await getData(url);
 
   return (
-    data.results.map((article) => {
+    data.results.map((post) => {
       return (
-        <div className="mb-2" key={article.id}>
-          <Post data={article} />
+        <div className="mb-2" key={post.id}>
+          <Post data={post} />
         </div>
       )
     })
